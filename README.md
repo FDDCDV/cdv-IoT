@@ -7,7 +7,6 @@ Smart Agricultural to inteligentny system IoT, który:
     - Monitoruje wilgotność gleby oraz poziom światła,
     - Informuje użytkownika, kiedy gleba jest zbyt sucha,
     - Automatycznie włącza lampy LED wspierające fotosyntezę, gdy światła naturalnego jest za mało,
-    - Przesyła dane do chmury, umożliwiając analizę i historię pomiarów z dowolnego miejsca.
 
     1.2 Grupa docelowa
 Właściciele przydomowych ogrodów i szklarni
@@ -20,8 +19,6 @@ Redukcja kosztów: mniejsze zużycie wody i energii (inteligentne podlewanie i o
 Zwiększenie wydajności: lepsze warunki do wzrostu = lepsze plony
 Automatyzacja: oszczędność czasu i wygoda dla użytkownika
 Zbieranie danych: analiza trendów i lepsze planowanie pielęgnacji roślin
-
-
 
     1.4 Możliwości rozwoju
 Integracja z aplikacją mobilną (powiadomienia push, kontrola zdalna)Sztuczna inteligencja do prognozowania nawadniania na podstawie danych pogodowych
