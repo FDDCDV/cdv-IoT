@@ -77,7 +77,7 @@ Backend dostępny pod adresem:
 ## 📂 Struktura projektu
 
 ```
-plantguardian_project/
+cdv-IoT/
 ├── main.py                 # Backend FastAPI
 ├── plantguardian_simulator.py  # Symulator urządzenia
 ├── led_control.py          # Komendy do IoT Hub
