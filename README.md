@@ -1,101 +1,128 @@
 
-# 🌱 SmartAgricultiral IoT – System monitorowania roślin
+# 🌱 SmartAgricultiral IoT – Monitoring Roślin
 
-**SmartAgricultiral** to system IoT, który monitoruje wilgotność gleby i poziom światła, wysyła powiadomienia, oraz automatycznie włącza lampę LED dla roślin w warunkach słabego oświetlenia.
-
----
-
-## 📦 Zawartość projektu
-
-- **Symulator urządzenia IoT** – wysyła dane wilgotności i światła do Azure IoT Hub
-- **Azure Blob Storage** – przechowuje dane pomiarowe w formacie JSON
-- **Backend (FastAPI)** – udostępnia REST API, wykonuje logikę biznesową i steruje LED
-- **Diagram C4 (PNG)** – architektura systemu
-- **Kolekcja Postman** – do testowania REST API
-- **Azure Pricing Calculator** – oszacowanie kosztów rozwiązania
+**SmartAgricultiral** to system IoT do automatycznego monitorowania wilgotności gleby i oświetlenia, który:
+- Wysyła dane z urządzenia IoT (lub symulatora) do chmury Azure
+- Włącza lampę LED, gdy poziom światła jest niski
+- Informuje użytkownika, gdy gleba wymaga podlania
 
 ---
 
-## 🚀 Szybki start
+## 🔧 Technologia
 
-### 🔧 Wymagania
+- Python 3
+- FastAPI (backend)
+- Azure IoT Hub (komunikacja z urządzeniem)
+- Azure Blob Storage (przechowywanie danych)
+- Azure Device Simulator lub własny symulator
+- Postman (testowanie API)
 
-- Python 3.10+
-- Azure konto (IoT Hub, Storage Account)
-- `pip install -r requirements.txt`
+---
 
-### ⚙️ Uruchom backend
+## 🚀 Jak uruchomić projekt lokalnie
 
+### ✅ 1. Klonowanie repozytorium
 ```bash
-uvicorn main:app --reload
+git clone <repo-url>
+cd plantguardian_project
 ```
 
-### 🤖 Uruchom symulator
+### ✅ 2. Instalacja zależności
+```bash
+pip install -r requirements.txt
+```
 
+### ✅ 3. Uruchomienie symulatora (urządzenie IoT)
 ```bash
 python plantguardian_simulator.py
 ```
 
+Symulator co 5 sekund wysyła dane `soilMoisture`, `lightLevel` i odbiera komendy LED ON/OFF.
+
+### ✅ 4. Uruchomienie backendu (FastAPI)
+```bash
+uvicorn main:app --reload
+```
+
+Backend dostępny pod adresem:  
+[http://localhost:8000](http://localhost:8000)
+
 ---
 
-## 🧪 REST API – Endpointy
+## 📬 Endpointy REST API
 
-| Endpoint         | Metoda | Opis                                     |
-|------------------|--------|------------------------------------------|
-| `/`              | GET    | Sprawdzenie działania API                |
-| `/sensor/latest` | GET    | Zwraca ostatnie dane z Blob Storage      |
-| `/device/led`    | POST   | Wysyła komendę LED ON/OFF do urządzenia  |
+| Endpoint              | Metoda | Opis                                   |
+|-----------------------|--------|----------------------------------------|
+| `/`                   | GET    | Test działania backendu                |
+| `/sensor/latest`      | GET    | Zwraca najnowsze dane z Blob Storage   |
+| `/device/led`         | POST   | Wysyła komendę do urządzenia IoT       |
 
-**Przykład body dla /device/led:**
+#### 🔸 Przykład `POST /device/led`:
 ```json
-{ "status": "ON" }
+{
+  "status": "ON"
+}
 ```
 
 ---
 
-## 📖 User Stories
+## 👤 User Stories
 
-- Jako użytkownik chcę otrzymać powiadomienie, gdy gleba jest zbyt sucha
-- Jako użytkownik chcę, aby lampa LED włączała się, gdy poziom światła jest niski
-- Jako użytkownik chcę przeglądać ostatnie dane z sensora
-
----
-
-## ☁️ Konfiguracja Azure
-
-- **IoT Hub**: do komunikacji z urządzeniem
-- **Storage Account + Blob**: do przechowywania danych
-- **Device (symulator)**: zarejestrowany w IoT Hub
-- **Routing (opcjonalnie)**: z IoT Hub do Blob
+- Jako właściciel rośliny chcę być powiadamiany, gdy gleba jest sucha
+- Jako system chcę automatycznie włączać lampę LED, gdy jest ciemno
+- Jako użytkownik chcę sprawdzić ostatni odczyt z czujników przez aplikację
 
 ---
 
-## 💰 Koszty
-
-Sprawdź kalkulację w pliku `azure-costs.xlsx` wygenerowanym w Azure Pricing Calculator:
-- IoT Hub (S1)
-- Storage Account
-- App Service lub Container App (backend)
-
----
-
-## 📂 Struktura katalogów
+## 📂 Struktura projektu
 
 ```
-plantguardian/
-├── main.py
-├── led_control.py
-├── blob_utils.py
-├── plantguardian_simulator.py
+plantguardian_project/
+├── main.py                 # Backend FastAPI
+├── plantguardian_simulator.py  # Symulator urządzenia
+├── led_control.py          # Komendy do IoT Hub
+├── blob_utils.py           # Dostęp do Blob Storage
 ├── requirements.txt
 ├── README.md
-├── diagram/ (C4)
-├── postman/ (kolekcja API)
-└── azure-costs.xlsx
 ```
 
 ---
 
-## 📬 Autorzy
+## 💰 Koszty (szacowane)
 
-Projekt edukacyjny – inżynieria IoT i chmura Azure.
+- Azure IoT Hub (S1): ~0.04 zł/dzień (mały ruch)
+- Azure Blob Storage (LRS): ~0.01 zł/GB
+- App Service: ~15–30 zł/miesiąc (opcjonalnie)
+
+Więcej: [Azure Pricing Calculator](https://azure.com/pricing/calculator)
+
+---
+
+## 📦 Testowanie API
+
+Użyj pliku kolekcji Postman:  
+`PlantGuardian_API.postman_collection.json`  
+Importuj do Postmana i testuj lokalnie.
+
+---
+
+## 📸 Diagram architektury (C4)
+
+![Diagram C4](./diagram/c4_level_2.png)
+
+---
+
+## ✅ Status
+
+- [x] Urządzenie IoT / symulator
+- [x] Backend z API
+- [x] Przechowywanie danych w chmurze
+- [x] Diagram architektury
+- [x] Kolekcja Postman
+- [ ] Kalkulator kosztów (do wypełnienia)
+
+---
+
+## 📧 Kontakt
+
+Projekt stworzony w ramach zaliczenia – 2025.
