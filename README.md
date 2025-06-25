@@ -108,10 +108,10 @@ Importuj do Postmana i testuj lokalnie.
 
 ## 📸 Diagram architektury (C4)
 
-![Diagram C4 Poziom 1]([./diagram/c4_level_2.png](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%201.pdf))<br>
-![Diagram C4 Poziom 2]([./diagram/c4_level_2.png](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%202.pdf))<br>
-![Diagram C4 Poziom 3]([./diagram/c4_level_2.png](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%203.pdf))<br>
-![Diagram C4 Poziom 4]([./diagram/c4_level_2.png](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%204.pdf))<br>
+![Diagram C4 Poziom 1](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%201.pdf)<br>
+![Diagram C4 Poziom 2](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%202.pdf)<br>
+![Diagram C4 Poziom 3](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%203.pdf)<br>
+![Diagram C4 Poziom 4](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%204.pdf)<br>
 
 ---
 
