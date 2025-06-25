@@ -24,7 +24,7 @@
 ### ✅ 1. Klonowanie repozytorium
 ```bash
 git clone <repo-url>
-cd plantguardian_project
+cd SmartAgricultiral_project
 ```
 
 ### ✅ 2. Instalacja zależności
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ### ✅ 3. Uruchomienie symulatora (urządzenie IoT)
 ```bash
-python plantguardian_simulator.py
+python SmartAgricultiral_simulator.py
 ```
 
 Symulator co 5 sekund wysyła dane `soilMoisture`, `lightLevel` i odbiera komendy LED ON/OFF.
@@ -79,7 +79,7 @@ Backend dostępny pod adresem:
 ```
 cdv-IoT/
 ├── main.py                 # Backend FastAPI
-├── plantguardian_simulator.py  # Symulator urządzenia
+├── SmartAgricultiral_simulator.py  # Symulator urządzenia
 ├── led_control.py          # Komendy do IoT Hub
 ├── blob_utils.py           # Dostęp do Blob Storage
 ├── requirements.txt
@@ -101,14 +101,17 @@ Więcej: [Azure Pricing Calculator](https://azure.com/pricing/calculator)
 ## 📦 Testowanie API
 
 Użyj pliku kolekcji Postman:  
-`PlantGuardian_API.postman_collection.json`  
+`SmartAgricultiral_API.postman_collection.json`  
 Importuj do Postmana i testuj lokalnie.
 
 ---
 
 ## 📸 Diagram architektury (C4)
 
-![Diagram C4](./diagram/c4_level_2.png)
+![Diagram C4 Poziom 1]([./diagram/c4_level_2.png](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%201.pdf))<br>
+![Diagram C4 Poziom 2]([./diagram/c4_level_2.png](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%202.pdf))<br>
+![Diagram C4 Poziom 3]([./diagram/c4_level_2.png](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%203.pdf))<br>
+![Diagram C4 Poziom 4]([./diagram/c4_level_2.png](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%204.pdf))<br>
 
 ---
 
@@ -119,10 +122,11 @@ Importuj do Postmana i testuj lokalnie.
 - [x] Przechowywanie danych w chmurze
 - [x] Diagram architektury
 - [x] Kolekcja Postman
-- [ ] Kalkulator kosztów (do wypełnienia)
+- [x] Kalkulator kosztów (do wypełnienia)
 
 ---
 
 ## 📧 Kontakt
 
 Projekt stworzony w ramach zaliczenia – 2025.
+Wykonany przez : Bartosz Filipiak oraz Filip Dzięcioł
