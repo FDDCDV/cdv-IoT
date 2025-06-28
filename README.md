@@ -94,7 +94,7 @@ cdv-IoT/
 - Azure Blob Storage (LRS): ~0.01 zł/GB
 - App Service: ~15–30 zł/miesiąc (opcjonalnie)
 
-Więcej: [Azure Pricing Calculator](https://azure.com/pricing/calculator)
+Więcej: [Azure Pricing Calculator](https://azure.com/e/ed9d94f5ab2d43558653193eb0012112)
 
 ---
 
@@ -108,10 +108,10 @@ Importuj do Postmana i testuj lokalnie.
 
 ## 📸 Diagram architektury (C4)
 
-![Diagram C4 Poziom 1](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%201.pdf)<br>
-![Diagram C4 Poziom 2](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%202.pdf)<br>
-![Diagram C4 Poziom 3](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%203.pdf)<br>
-![Diagram C4 Poziom 4](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%204.pdf)<br>
+[Diagram C4 Poziom 1](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%201.pdf)<br>
+[Diagram C4 Poziom 2](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%202.pdf)<br>
+[Diagram C4 Poziom 3](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%203.pdf)<br>
+[Diagram C4 Poziom 4](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%204.pdf)<br>
 
 ---
 
