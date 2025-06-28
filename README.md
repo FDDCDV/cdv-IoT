@@ -77,13 +77,25 @@ Backend dostępny pod adresem:
 ## 📂 Struktura projektu
 
 ```
-cdv-IoT/
-├── main.py                 # Backend FastAPI
-├── SmartAgricultiral_simulator.py  # Symulator urządzenia
-├── led_control.py          # Komendy do IoT Hub
-├── blob_utils.py           # Dostęp do Blob Storage
-├── requirements.txt
+PlantGuardian/
+├── backend/
+│   ├── main.py
+│   ├── auto_control.py
+│   ├── blob_utils.py
+│   ├── led_control.py
+│   ├── notifications.py
+│   ├── alerts_email.py
+│   ├── sendgrid_notify.py
+│   └── __init__.py
+├── SmartAgricultiral_simulator.py
+├── SmartAgricultiral_API_Final.postman_collection.json
 ├── README.md
+├── diagram_C4_L2.png
+├── diagram_C4_L4_components.png
+├── diagram_C4_L4_components.png
+├── diagram_C4_L4_components.png
+└── requirements.txt
+
 ```
 
 ---
