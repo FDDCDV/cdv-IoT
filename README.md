@@ -37,11 +37,11 @@ pip install -r requirements.txt
 python SmartAgricultiral_simulator.py
 ```
 
-Symulator co 5 sekund wysyła dane `soilMoisture`, `lightLevel` i odbiera komendy LED ON/OFF.
+Symulator co 15 sekund wysyła dane `soilMoisture`, `lightLevel` i odbiera komendy LED ON/OFF.
 
 ### ✅ 4. Uruchomienie backendu (FastAPI)
 ```bash
-uvicorn main:app --reload
+py -m uvicorn main:app --reload 
 ```
 
 Backend dostępny pod adresem:  
@@ -90,11 +90,7 @@ cdv-IoT/
 
 ## 💰 Koszty (szacowane)
 
-- Azure IoT Hub (S1): ~0.04 zł/dzień (mały ruch)
-- Azure Blob Storage (LRS): ~0.01 zł/GB
-- App Service: ~15–30 zł/miesiąc (opcjonalnie)
-
-Więcej: [Azure Pricing Calculator](https://azure.com/e/ed9d94f5ab2d43558653193eb0012112)
+Koszty: [Azure Pricing Calculator](https://azure.com/e/ed9d94f5ab2d43558653193eb0012112)
 
 ---
 
