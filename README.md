@@ -23,7 +23,7 @@
 
 ### ✅ 1. Klonowanie repozytorium
 ```bash
-git clone <repo-url>
+git clone https://github.com/FDDCDV/cdv-SmartAgricultiral
 cd SmartAgricultiral_project
 ```
 
