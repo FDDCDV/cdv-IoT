@@ -16,6 +16,7 @@
 - Azure Blob Storage (przechowywanie danych)
 - Azure Device Simulator lub własny symulator
 - Postman (testowanie API)
+- SendGrid
 
 ---
 
