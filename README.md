@@ -101,7 +101,7 @@ SmartAgricultiral/
 
 ## 💰 Koszty (szacowane)
 
-Koszty: [Azure Pricing Calculator](https://azure.com/e/5edec8acfd334c08b7c064f53cc42e4a)
+Koszty: [Azure Pricing Calculator](https://azure.com/e/fbf035af787b457a82e6901defafdf98)
 
 ---
 
