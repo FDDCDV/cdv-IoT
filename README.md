@@ -77,13 +77,24 @@ Backend dostępny pod adresem:
 ## 📂 Struktura projektu
 
 ```
-cdv-IoT/
-├── main.py                 # Backend FastAPI
-├── SmartAgricultiral_simulator.py  # Symulator urządzenia
-├── led_control.py          # Komendy do IoT Hub
-├── blob_utils.py           # Dostęp do Blob Storage
-├── requirements.txt
+SmartAgricultiral/
+├── backend/
+│   ├── main.py
+│   ├── auto_control.py
+│   ├── blob_utils.py
+│   ├── led_control.py
+│   ├── notifications.py
+│   ├── alerts_email.py
+│   ├── sendgrid_notify.py
+│   └── __init__.py
+├── SmartAgricultiral_simulator.py
+├── SmartAgricultiral_API_Final.postman_collection.json
 ├── README.md
+├── Diagram C4 - Poziom 1.pdf
+├── Diagram C4 - Poziom 2.pdf
+├── Diagram C4 - Poziom 3.pdf
+├── Diagram C4 Poziom 4.pdf
+└── requirements.txt
 ```
 
 ---
@@ -104,10 +115,10 @@ Importuj do Postmana i testuj lokalnie.
 
 ## 📸 Diagram architektury (C4)
 
-[Diagram C4 Poziom 1](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%201.pdf)<br>
-[Diagram C4 Poziom 2](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%202.pdf)<br>
-[Diagram C4 Poziom 3](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%203.pdf)<br>
-[Diagram C4 Poziom 4](https://github.com/FDDCDV/cdv-IoT/blob/main/Diagram%20C4%20-%20Poziom%204.pdf)<br>
+[Diagram C4 Poziom 1](https://github.com/FDDCDV/cdv-SmartAgricultiral/blob/main/Diagram%20C4%20-%20Poziom%201.pdf)<br>
+[Diagram C4 Poziom 2](https://github.com/FDDCDV/cdv-SmartAgricultiral/blob/main/Diagram%20C4%20-%20Poziom%202.pdf)<br>
+[Diagram C4 Poziom 3](https://github.com/FDDCDV/cdv-SmartAgricultiral/blob/main/Diagram%20C4%20-%20Poziom%203.pdf)<br>
+[Diagram C4 Poziom 4](https://github.com/FDDCDV/cdv-SmartAgricultiral/blob/main/Diagram%20C4%20Poziom%204.pdf)<br>
 
 ---
 
